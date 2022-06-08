@@ -6,8 +6,8 @@
 
 Operating System  |  Version  |  Download
 ------------- | ------------- | -------------
-Windows 11  | Latest 1.0.4  | [64Bit]() , [32Bit]()
-Windows 10  | Latest 1.0.4  | [64Bit]() , [32Bit]()
+<!-- Windows 11  | Latest 1.0.4  | [64Bit]() , [32Bit]() -->
+<!-- Windows 10  | Latest 1.0.4  | [64Bit]() , [32Bit]() -->
 
 </div>
 <br><br><br>
@@ -18,11 +18,11 @@ Windows 10  | Latest 1.0.4  | [64Bit]() , [32Bit]()
 <br><br><br>
 <div align='center'>
     <p>English Dark & Light Modes</p>
-    <img style='border-radius:5px' src=""></img>
+    <img style='border-radius:5px' src="https://github.com/shervinbdndev/blob/master/view/dle.jpg"></img>
     <br>
     <br><br><br>
     <p>Persian Dark & Light Modes</p>
-    <img style='border-radius:5px' src=""></img>
+    <img style='border-radius:5px' src="https://github.com/shervinbdndev/blob/master/view/dlp.jpg"></img>
 </div>
 <hr>
 
