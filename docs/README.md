@@ -6,8 +6,8 @@
 
 Operating System  |  Version  |  Download
 ------------- | ------------- | -------------
-<!-- Windows 11  | Latest 1.0.4  | [64Bit]() , [32Bit]() -->
-<!-- Windows 10  | Latest 1.0.4  | [64Bit]() , [32Bit]() -->
+Windows 11  | Latest 1.0.4  | [64Bit](https://codeload.github.com/shervinbdndev/MusicPlayer/zip/refs/heads/64-bit)
+Windows 10  | Latest 1.0.4  | [64Bit](https://codeload.github.com/shervinbdndev/MusicPlayer/zip/refs/heads/64-bit) , [32Bit](https://codeload.github.com/shervinbdndev/MusicPlayer/zip/refs/heads/32-bit)
 
 </div>
 <br><br><br>
