@@ -1,6 +1,0 @@
-tk
-customtkinter
-sv_ttk
-ntkutils
-pygame
-mutagen
