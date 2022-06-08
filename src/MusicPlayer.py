@@ -195,7 +195,7 @@ class MusicPlayerMainClass:
             self.cover['text'] = os.path.basename(p=self.playList[self.current])
             self.list.activate(index=self.current)
             self.list.itemconfigure(index=self.current)
-            mixer.music.play()
+            mixer.music.play(loops=0)
             getSongInfo()
             
         def musicSliderPlay(event=None) -> None:
