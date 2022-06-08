@@ -18,11 +18,11 @@ Operating System  |  Version  |  Download
 <br><br><br>
 <div align='center'>
     <p>English Dark & Light Modes</p>
-    <img style='border-radius:5px' src="https://github.com/shervinbdndev/blob/master/view/dle.jpg"></img>
+    <img style='border-radius:5px' src="https://github.com/shervinbdndev/MusicPlayer/blob/master/view/dle.jpg"></img>
     <br>
     <br><br><br>
     <p>Persian Dark & Light Modes</p>
-    <img style='border-radius:5px' src="https://github.com/shervinbdndev/blob/master/view/dlp.jpg"></img>
+    <img style='border-radius:5px' src="https://github.com/shervinbdndev/MusicPlayer/blob/master/view/dlp.jpg"></img>
 </div>
 <hr>
 
