@@ -34,6 +34,7 @@ Windows 10  | Latest 1.0.4  | [64Bit](https://codeload.github.com/shervinbdndev/
 - [x] Able To Move Slider
 - [x] Able To Change Between Languages (Persian & English)
 - [x] Able To Set Theme as The System Theme
+- [] Able To Show Music Cover
 
 <hr>
 <br><br><br><br>
