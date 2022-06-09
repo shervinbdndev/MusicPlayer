@@ -22,7 +22,7 @@ except ModuleNotFoundError.__doc__ as mnfe:
     raise AttributeError(args='Cannot Run The Application') from None
 
 finally:
-    ...
+    None or ...
     
 
 
