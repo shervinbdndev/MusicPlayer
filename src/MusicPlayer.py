@@ -9,10 +9,11 @@ try:
     import webbrowser
     from typing import Any
     from pygame import mixer
+    from typing import Literal
     from mutagen.mp3 import MP3
     from tkinter import filedialog
     from typing_extensions import Self
-    from customtkinter.widgets.customtkinter_button import CTkButton
+    from customtkinter.widgets.ctk_button import CTkButton
     from tkinter.ttk import (Notebook , Frame , Scrollbar , Scale as S)
     from tkinter.__init__ import (LabelFrame , DoubleVar , Listbox , Scale , Label)
     
@@ -31,7 +32,7 @@ finally:
 
 
 class MusicPlayerMainClass:
-    def __init__(self : Self) -> None:
+    def __init__(self : Self) -> Literal[None]:
         super(MusicPlayerMainClass , self).__init__()
         self.root = tkinter.Tk()
         self.root.title(string='Music Player')
@@ -61,7 +62,7 @@ class MusicPlayerMainClass:
         else:
             self.playList : list = []
         
-        def getTheme() -> None:
+        def getTheme() -> Literal[None]:
             if (darkdetect.isLight()):
                 sv_ttk.set_theme(theme='light')
                 self.cover.configure(foreground=Materials.Colors.green)
@@ -92,7 +93,7 @@ class MusicPlayerMainClass:
                 self.btnGithub.configure(fg_color=Materials.Colors.green , bg_color=Materials.Colors.dark)
                 ntkutils.dark_title_bar(window=self.root)
                 
-        def getLanguage(arg : Any) -> None:
+        def getLanguage(arg : Any) -> Literal[None]:
             if (arg == 'pa'):
                 self.tabControl.add(child=self.tabMusic , text='آهنگ')
                 self.tabControl.add(child=self.tabList , text='لیست پخش')
@@ -118,11 +119,11 @@ class MusicPlayerMainClass:
                 self.btnEN.configure(text='English')
                 self.btnGithub.configure(text='Github')
             
-        def openGithub(arg : Any) -> None:
+        def openGithub(arg : Any) -> Literal[None]:
             if (arg == 'opgh'):
                 webbrowser.open(url='https://github.com/shervinbdndev/')
                 
-        def loadSong(arg : Any) -> None:
+        def loadSong(arg : Any) -> Literal[None]:
             if (arg == 'load'):
                 directory = filedialog.askdirectory()
                 for root , dirs , files in os.walk(top=directory):
@@ -137,7 +138,7 @@ class MusicPlayerMainClass:
                 self.list.delete(first=0 , last=Materials.Constants.end)
                 countSongs()
                 
-        def getSongInfo() -> None:
+        def getSongInfo() -> Literal[None]:
             currentTime = mixer.music.get_pos() / 1000
             convertedTime = time.strftime('%H:%M:%S' , time.gmtime(currentTime))
             global songLength
@@ -160,7 +161,7 @@ class MusicPlayerMainClass:
                 self.musicSlider.configure(value=nextTime)
             self.musicTime.after(ms=1000 , func=getSongInfo)
                 
-        def previousSong(arg : Any) -> None:
+        def previousSong(arg : Any) -> Literal[None]:
             if (arg == 'prev'):
                 if (self.current > 0):
                     self.current -= 1
@@ -170,7 +171,7 @@ class MusicPlayerMainClass:
                 self.musicSlider['value'] = 0
                 playSong()
             
-        def pauseSong(arg : Any) -> None:
+        def pauseSong(arg : Any) -> Literal[None]:
             if (arg == 'pause'):
                 if (not self.pause):
                     self.pause = True
@@ -183,7 +184,7 @@ class MusicPlayerMainClass:
                     mixer.music.unpause()
                     self.btnPause.configure(text='⏸')
             
-        def playSong(event=None) -> None:
+        def playSong(event=None) -> Literal[None]:
             if (event is not None):
                 self.current = self.list.curselection()[0]
                 for i in range(len(self.playList)):
@@ -198,10 +199,10 @@ class MusicPlayerMainClass:
             mixer.music.play(loops=0)
             getSongInfo()
             
-        def musicSliderPlay(event=None) -> None:
+        def musicSliderPlay(event=None) -> Literal[None]:
             mixer.music.play(start=int(self.musicSlider.get()))
             
-        def nextSong(arg : Any) -> None:
+        def nextSong(arg : Any) -> Literal[None]:
             if (arg == 'nxt'):
                 if (self.current < len(self.playList) - 1):
                     self.current += 1
@@ -211,10 +212,10 @@ class MusicPlayerMainClass:
                 self.musicSlider['value'] = 0
                 playSong()
             
-        def changeSongVolume(event=None) -> None:
+        def changeSongVolume(event=None) -> Literal[None]:
             mixer.music.set_volume(self.slider.get())
             
-        def countSongs() -> None:
+        def countSongs() -> Literal[None]:
             for index , song in enumerate(self.playList):
                 self.list.insert(index , os.path.basename(p=song))
         
